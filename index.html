@@ -72,7 +72,7 @@
     <div style="max-width:500px;width:100%;margin:auto;" @click="next">
         <div id="gadkaall" :class="'gadkaall'+gadkaclass">
             <p class="gadka">{{gadki[currentgadka].gadka }}</p>
-            <button class="btn btn-success" @click="next">Następny</button>
+            <button class="btn btn-success" @click.stop="next">Następny</button>
         </div>
     </div>
 
@@ -89,8 +89,8 @@
             gadkaclass:0,
             currentgadka:0,
             gadki:[
-                {gadka:'Gdzie pracujesz?'},
-                { gadka: 'Gdzie studiujesz?' },
+                {gadka:'Gdzieś pracujesz?'},
+                { gadka: 'Gdzieś studiujesz?' },
                 { gadka: 'Masz jakieś hobby?' },
                 { gadka: 'Masz chłopaka?' },
                 { gadka: 'Jakie są twoje perspektywy rozwoju?' },
@@ -101,6 +101,10 @@
                 { gadka: 'Jesteś za Izraelem czy za Palestyną?' },
                 { gadka: 'Jaka jest twoja definicja dojrzałości?' },
                 { gadka: 'Umówiłabyś się na kawę z jakimś intelektualistą?' },
+                { gadka: 'Szkoda że w ogóle nie chcesz się rozwijać' },
+                { gadka: 'Szkoda że tak szufladkujesz ludzi' },
+
+
 
 
 
