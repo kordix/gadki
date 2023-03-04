@@ -40,7 +40,8 @@
             background:#007bff;
             border-radius: 5px;
             height:200px;
-            width:400px;
+            max-width:400px;
+            width:100%;
             box-shadow: 3px 3px 3px #151515;
             transition:.5s;
         }
@@ -50,7 +51,8 @@
             background:#17a2b8;
             border-radius: 5px;
             height:200px;
-            width:400px;
+            max-width:400px;
+            width:100%;
             box-shadow: 3px 3px 3px #151515;
             transition:.5s;
 
@@ -67,7 +69,7 @@
 <body>
 <div id="app">
 
-    <div style="max-width:500px;widthL100%;margin:auto;">
+    <div style="max-width:500px;width:100%;margin:auto;">
         <div id="gadkaall" :class="'gadkaall'+gadkaclass">
             <p class="gadka">{{gadki[currentgadka].gadka }}</p>
             <button class="btn btn-success" @click="next">Następny</button>
